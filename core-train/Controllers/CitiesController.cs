@@ -9,11 +9,7 @@ namespace coreTrain.Controllers
 		[HttpGet]
 		public JsonResult Index()
 		{		
-			return new JsonResult(new List<object>
-			{
-				new { id = 1, Name = "NY" },
-				new { id = 2, Name = "LA" }
-			});
+			return new JsonResult(CitiesDataStore.Current.Cities);
 		}
 	}
 }
