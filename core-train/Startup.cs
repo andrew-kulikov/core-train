@@ -22,6 +22,7 @@ namespace core_train
 				app.UseDeveloperExceptionPage();
 			}
 
+			app.UseStatusCodePages();
 			app.UseMvc();
 
 			app.Run(async (context) =>
